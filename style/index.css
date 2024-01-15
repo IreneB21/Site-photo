@@ -1,0 +1,162 @@
+.home-photos {
+    background-color: #F2F1F3;
+    padding: 80px;
+}
+
+.home-photos h2 {
+    color: #242424;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+/* .home-pictures div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+} */
+
+.home-presentation {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.home-presentation h1 {
+    margin-bottom: 15px;
+}
+  
+.home-presentation p {
+    margin-bottom: 30px;
+}
+
+.home-presentation div {
+    padding-right: 80px;
+}
+
+.grid.favorites {
+    display: grid;
+    /* justify-content: center; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 15px;
+}
+
+.favorites-container {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+}
+
+.grid.favorites img {
+    transition: transform 1.1s;
+}
+
+.grid.favorites img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.box-favorites.one {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.box-favorites.two {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.box-favorites.three {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.box-favorites.four {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.home-contact h2 {
+    text-align: center;
+    color: #a5b4fc;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+}
+
+.form-name-email {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 996px) {
+    .home-presentation {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-presentation div {
+        padding-right: 0;
+        text-align: center;
+        order: 2;
+    }
+
+    .home-presentation img {
+        order: 1;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .home-photos {
+        padding: 20px;
+    }
+    
+    .home-photos div {
+        flex-direction: column;
+    }
+    
+    .home-contact {
+        padding: 50px 20px;
+    }
+    
+    .form-name-email {
+        flex-direction: column;
+        gap: 0;
+    }
+}
