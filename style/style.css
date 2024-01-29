@@ -4,7 +4,6 @@
 }
 
 body {
-    /* Ici on utilise le sélecteur body pour appliquer une police et une taille par défaut pour les éléments */
     font-family: 'Manrope', sans-serif;
     font-size: 1em;
     background-color: #1F2039;
@@ -41,6 +40,11 @@ p {
     padding-bottom: 20px;
 }
 
+.presentation-paragrah {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 li {
     font-family: 'Manrope', sans-serif;
     font-size: 1.1em;
@@ -58,7 +62,7 @@ h2 {
 
 header, 
 footer {
-    background-color: #F2F1F3;
+    background-color: white;
     padding: 10px 50px;
 }
 
@@ -96,6 +100,89 @@ nav a {
     margin-left: 30px;
 }
 
+.navbar, .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: relative;
+    background-color: #fff;
+    padding: 17px;
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.navbar input:checked ~ .menu {
+    width: 450px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #1F2039;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    opacity: 70%;
+}
+
+.navbar input {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.navbar span {
+    position: absolute;
+    left: 20px;
+    width: 26px;
+    height: 2.2px;
+    border-radius: 50px;
+    background-color: #1F2039;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.navbar input:checked ~ span {
+    background-color: #A5B4FC;
+}
+
+.navbar span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.navbar input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.navbar span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.navbar input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+
 .autoportrait {
     max-height: 400px;
 }
@@ -118,7 +205,22 @@ img {
     object-fit: cover;
 }
 
-/* Zoom léger sur image quand hover : .desti-card:is(:hover, :focus-within) .img-cover { transform: scale(1.05); } (??) */
+/* submit-form  */
+
+.ty-message {
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body {
+    margin-top: 40px;
+}
+
 
 @media screen and (max-width: 996px) {
     header nav {

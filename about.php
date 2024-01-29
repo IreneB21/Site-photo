@@ -36,48 +36,49 @@
         <section>
             <h1>About me</h1>
             <div class="carre-contenu">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="presentation-paragrah">
+                    Claire, 36 ans, parisienne. Travaillant dans la finance depuis plusieurs années, j’ai cherché un moyen d’exprimer ma créativité. J’ai découvert la photo de rue il y a 7 ans, le plaisir de garder les yeux ouverts en permanence et de chercher la beauté, la poésie dans les petits détails autour de moi, dans un rayon de lumière, un reflet, une attitude... 
+                    Chercher le beau partout, dans ce qui nous entoure, permet de voir la vie sous une facette plus douce, et d’apprendre à se réjouir de ce qui peut sembler banal à un oeil non exercé.
+                    <br /> 
+                    La rue est un immense terrain de jeu, au sein duquel je tente en permanence de m’améliorer et de me renouveler. 
+                    J’espère que vous apprécierez cet échantillon de mon travail.
+                    <br />
+                    J’ai choisi pour commencer une sélection de photos du Japon, le pays du soleil levant où mon plaisir de faire de la photo était exacerbé. 
+                    La lumière y est plus nuancée, les attitudes plus douces. Tout y est encore plus sujet à beauté.
+                    J’ai aussi eu envie de partager ma vision des détails, ou comment un petit rien peut se révéler source de merveilleux. 
+                    <br />
+                    Dans la section « print » vous trouverez une projection de mon travail imprimé et encadré, n’hésitez pas à me contacter si l’une des impressions vous touche, et si vous l’imaginez chez vous.</p>
+
                 <h2>Services</h2>
                 <ul>
                     <li>Portrait seul ou à plusieurs,</li>
-                    <li>Shooting mode,</li>
+                    <li>Impression,</li>
                     <li>Retouches sur mesure,</li>
-                    <li>Développement.</li>
                 </ul>
             </div>
 
             <div>
-                <a href="projects.html" class="cta">GO TO MY PROJECTS</a>
+                <a href="projects.php" class="cta">GO TO MY PROJECTS</a>
             </div>
         </section>
 
-        <section class="section-tarifs">
-            <h2>Tarifs</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Désignation</th>
-                        <th>Quantité</th>
-                        <th>Prix</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Retouches photo studio professionnel</td>
-                        <td>x 800 photos</td>
-                        <td>3200€/800 photos</td>
-                    </tr>
-                    <tr>
-                        <td>Assistant photo lumière professionnel</td>
-                        <td>x 2 sets studio</td>
-                        <td>1500€/journée</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div>
-                <a href="index.html#contact" class="cta">CONTACT-ME</a>
-            </div>
+        <section id="contact" class="home-contact">
+            <h2>Let's talk about your project</h2>
+            <form method="POST" action="submit-form.php">
+                <div class="form-name-email">
+                    <div class="form-column">
+                        <label for="name">name</label>
+                        <input type="text" name="name" id="name"/>
+                    </div>
+                    <div class="form-column">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email"/>
+                    </div>
+                </div>
+                <label for="message">message</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <input type="submit" value="SEND" class="cta"/>
+            </form>
         </section>
     </main>
 

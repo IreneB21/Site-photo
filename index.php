@@ -39,10 +39,11 @@
         <section class="home-presentation">
             <div>
                 <h1>Claire Parisienne Photography</h1>
-                <p>
-                    Présentation : Lorem ipsum dolor sit amet, <em class="important">consectetur</em> adipiscing elit, sed do <em class="important">eiusmod</em> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                <p class="presentation-paragrah">
+                    Parisienne de naissance, j’ai toujours aimé <em class="important">observer</em> ce qui m’entoure et chercher la <em class="important">beauté</em> au coeur du quotidien. 
+                    J’espère par ces photos vous transmettre cette vision...
                 </p>
-                <a href="#contact" class="cta">A PROJECT? CONTACT ME</a>
+                <a href="about.php#contact" class="cta">A PROJECT? CONTACT ME</a>
             </div>
             
             <img src="images/autoportrait3.jpeg" alt="Autoportrait" class="autoportrait">
@@ -60,27 +61,8 @@
             </div>
 
             <div>
-                <a href="projects.html" class="cta">ALL MY PROJECTS</a>
+                <a href="projects.php" class="cta">ALL MY PROJECTS</a>
             </div>
-        </section>
-
-        <section id="contact" class="home-contact">
-            <h2>Let's talk about your project</h2>
-            <form method="get" action="#">
-                <div class="form-name-email">
-                    <div class="form-column">
-                        <label for="name">name</label>
-                        <input type="text" name="name" id="name"/>
-                    </div>
-                    <div class="form-column">
-                        <label for="email">email</label>
-                        <input type="email" name="email" id="email"/>
-                    </div>
-                </div>
-                <label for="message">message</label>
-                <textarea name="message" id="message" rows="10"></textarea>
-                <input type="submit" value="SEND" class="cta"/>
-            </form>
         </section>
     </main>
 
